@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,15 +18,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ImN-HJ-UVT">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </scrollView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="T8j-iq-Mzt">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ImN-HJ-UVT" secondAttribute="trailing" id="KAJ-D3-HuL"/>
-                            <constraint firstItem="ImN-HJ-UVT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="icA-cX-eGd"/>
-                            <constraint firstItem="ImN-HJ-UVT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ooE-MQ-5sQ"/>
-                            <constraint firstItem="ImN-HJ-UVT" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="zMc-cd-906"/>
+                            <constraint firstAttribute="trailing" secondItem="T8j-iq-Mzt" secondAttribute="trailing" id="171-r5-yjb"/>
+                            <constraint firstItem="T8j-iq-Mzt" firstAttribute="leading" secondItem="ImN-HJ-UVT" secondAttribute="leading" id="1nz-l8-Eef"/>
+                            <constraint firstItem="ImN-HJ-UVT" firstAttribute="top" secondItem="T8j-iq-Mzt" secondAttribute="bottom" id="3G2-Rg-kEd"/>
+                            <constraint firstItem="ImN-HJ-UVT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="E5d-FN-0rU"/>
+                            <constraint firstItem="T8j-iq-Mzt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="QxC-VJ-9dj"/>
+                            <constraint firstItem="ImN-HJ-UVT" firstAttribute="trailing" secondItem="T8j-iq-Mzt" secondAttribute="trailing" id="Sfl-KP-x9r"/>
+                            <constraint firstItem="ImN-HJ-UVT" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="T3o-eL-qrH"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -36,6 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="454.5" y="249.5"/>
         </scene>
     </scenes>
 </document>
